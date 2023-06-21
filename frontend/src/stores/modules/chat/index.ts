@@ -23,9 +23,18 @@ export const useChatStore = defineStore(
     const isShowChatServiceSelectModal = ref(false);
     const selectedSydneyBaseUrl = ref('');
     const sydneyConfigs = ref<SydneyConfig[]>([
+
       {
         baseUrl: location.origin,
         label: '本站',
+      },
+      {
+        baseUrl: 'https://bing.c3g.ink',
+        label: '镜像1',
+      },
+      {
+        baseUrl: 'https://bing.c11r.cn',
+        label: '镜像2',
       },
       {
         baseUrl: '',
